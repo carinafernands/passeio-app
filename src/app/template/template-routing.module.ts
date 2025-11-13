@@ -5,7 +5,13 @@ import { LayoutComponent } from './layout/layout.component';
 const routes: Routes = [
   {
     path: 'paginas',
-    component: LayoutComponent
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'categorias',
+        loadChildren: () => import ('../categorias/categorias.module').then(m => m.CategoriasModule)
+      }
+    ]
   }
 ];
 
@@ -14,3 +20,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class TemplateRoutingModule { }
+
