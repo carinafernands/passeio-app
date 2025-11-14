@@ -1,9 +1,24 @@
 {
-  "categorias":[
+  "categorias": [
     {
-       "id": "1",
-       "nome": "Restaurantes",
-       "descricao": "Lugares para alimentação"
+      "id": "2",
+      "nome": "Shopping",
+      "descricao": "Lugares para compras"
+    },
+    {
+      "id": "81f9",
+      "nome": "Restaurante - Atualizado",
+      "descricao": "Lugares para alimentação"
+    },
+    {
+      "id": "22a4",
+      "nome": "Praias",
+      "descricao": "Lugares para tomar banho de praia "
+    },
+    {
+      "id": "3b72",
+      "nome": "teste",
+      "descricao": "teste"
     }
   ]
 }
