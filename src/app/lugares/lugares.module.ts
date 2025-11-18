@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule} from '@angular/forms'
 
 import { LugaresRoutingModule } from './lugares-routing.module';
 import { LugaresComponent } from './lugares/lugares.component';
@@ -11,7 +12,8 @@ import { LugaresComponent } from './lugares/lugares.component';
   ],
   imports: [
     CommonModule,
-    LugaresRoutingModule
+    LugaresRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class LugaresModule { }

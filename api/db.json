@@ -19,6 +19,37 @@
       "id": "3b72",
       "nome": "teste",
       "descricao": "teste"
+    },
+    {
+      "id": "1e29",
+      "nome": "teste 2",
+      "descricao": "teste 2"
+    }
+  ],
+  "lugares": [
+    {
+      "id": "12c5",
+      "nome": "Praia do Zé",
+      "categoria": "Praias",
+      "localizacao": "SP",
+      "urlFoto": "",
+      "avaliacao": "3"
+    },
+    {
+      "id": "d0c3",
+      "nome": "Boa Viagem",
+      "categoria": "Praias",
+      "localizacao": "Recife",
+      "urlFoto": "https://viagemeturismo.abril.com.br/wp-content/uploads/2024/03/Portal-da-CopabarraME.jpg?quality=70&strip=info&w=1280&h=720&crop=1",
+      "avaliacao": "4"
+    },
+    {
+      "id": "47eb",
+      "nome": "parque ibirapuera",
+      "categoria": "Shopping",
+      "localizacao": "Recife",
+      "urlFoto": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/53/74/25/shopping-recife.jpg?w=1200&h=1200&s=1",
+      "avaliacao": "2"
     }
   ]
 }
