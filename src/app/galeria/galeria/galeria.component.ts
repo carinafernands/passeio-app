@@ -15,6 +15,9 @@ export class GaleriaComponent implements OnInit{
 
   lugares: Lugar[] = [];
   categoriasFiltro: Categorias[] = [];
+  nomeFiltro: string = '';
+  categoriaFiltro: string = '';
+
 
   constructor (
     private lugarService: LugaresService,
@@ -41,5 +44,10 @@ export class GaleriaComponent implements OnInit{
 
     return estrelasCheias + estrelasVazias;
 
+  }
+
+  filtrar(){
+    this.lugarService.filtrar(this.nomeFiltro, this.categoriaFiltro)
+      .subscribe(resultado => this.lugares = resultado);
   }
 }
