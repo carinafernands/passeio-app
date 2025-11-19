@@ -26,7 +26,7 @@ export class LugaresService {
       parametros = parametros.set('nome_like', nome);
     }
 
-     if(categoria){
+     if(categoria && categoria !== '-1'){
       parametros = parametros.set('categoria', categoria);
     }
     return this.http.get<Lugar[]>('http://localhost:3000/lugares', {
