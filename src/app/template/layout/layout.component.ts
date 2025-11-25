@@ -35,3 +35,4 @@ export class LayoutComponent {
     return rotaFilha?.snapshot.data as LayoutProps;
   }
 }
+
