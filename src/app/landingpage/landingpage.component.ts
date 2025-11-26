@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Profile } from './profile.model';
 import { Router } from '@angular/router';
+import { AuthgoogleService } from '../authgoogle.service';
 
 @Component({
   selector: 'app-landingpage',
@@ -12,17 +13,23 @@ export class LandingpageComponent {
 
   profile : Profile | undefined;
 
-  constructor(private router: Router){}
+  constructor(
+    private router: Router,
+    protected loginService: AuthgoogleService
+  ){}
 
   navegar(){
     this.router.navigate(['/paginas/galeria']);
   }
 
   logarComGoogle(){
-
+    this.loginService.login();
   }
 
-  isLoggedIn(){
-    return !!this.profile;
-  }
+ isLoggedIn(): boolean{
+  this.profile = this.loginService.getLoggedProfile();
+  console.log("Dados Google:", this.profile);
+  return !!this.profile;
+
+}
 }
