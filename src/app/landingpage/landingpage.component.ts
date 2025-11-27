@@ -30,6 +30,5 @@ export class LandingpageComponent {
   this.profile = this.loginService.getLoggedProfile();
   console.log("Dados Google:", this.profile);
   return !!this.profile;
-
-}
+ }
 }

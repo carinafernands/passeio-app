@@ -31,10 +31,10 @@ export class AuthgoogleService {
   }
 
   logout(){
-
+    this.oauthService.revokeTokenAndLogout();
     this.oauthService.logOut();
     this.profile.set(null);
-    this.router.navigate(['']);
+    this.router.navigate([''])
   }
 
   getLoggedProfile(){
