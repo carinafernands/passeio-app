@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN npm install -g json-server@0.17.4
 
-COPY ./db.production.json .
+COPY db.production.json .
 
 EXPOSE 4000
 
