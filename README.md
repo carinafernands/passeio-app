@@ -1,59 +1,69 @@
-# PasseioApp
+# Passeio App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+Aplicação Angular + API JSON Server.  
+Frontend hospedado no **GitHub Pages**.  
+Backend + Frontend Dockerizados e hospedados no **Render**.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Tecnologias
 
-```bash
-ng serve
-```
+- Angular 19
+- TailwindCSS
+- JSON Server
+- Docker & Docker Compose
+- Nginx
+- GitHub Pages
+- Render
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 📦 Como rodar localmente
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+# 1. Instale dependências
+npm install
 
-```bash
-ng generate component component-name
-```
+shell
+Copiar código
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+# 2. Suba o frontend
+npm start
 
-```bash
-ng generate --help
-```
+shell
+Copiar código
 
-## Building
+# 3. Suba a API
+npm run server
 
-To build the project run:
+yaml
+Copiar código
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🐳 Rodar tudo com Docker
 
-## Running unit tests
+### Build das imagens
+docker build -t passeio-app .
+docker build -t passeio-api ./api
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+shell
+Copiar código
 
-```bash
-ng test
-```
+### Executar containers
+docker run -p 4200:80 passeio-app
+docker run -p 4000:4000 passeio-api
 
-## Running end-to-end tests
+yaml
+Copiar código
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## 🌍 Deploys
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+# 🔹 Frontend (Angular)
+Hospedado em **GitHub Pages**
 
-## Additional Resources
+# 🔹 Backend (API)
+Hospedado no **Render** usando Docker
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
